@@ -1,12 +1,26 @@
 from turtle import *
+from helpers import draw_circle
+from movement import no_delay
+import time
 import settings
 
-def draw_animation(num_frames, sleeptime):
-    for i in range(num_frames):
-        # YOUR CODE GOES HERE#
+def draw_animation(num_frames,sleeptime):
+    """Takes num_frames and sleeptime as arguments and draws the animation.
+    Draws 3 circles on top of eachother. With each frame, the innermost and outermost
+    circles rotate clockwise and the middle circle rotates anti-clockwise"""
+    hideturtle()
 
-        screen.update()
-        time.sleep(sleeptime)
+    for i in range(num_frames):
+        with no_delay():
+            clear()
+            setheading(360-i)
+            draw_circle(300)
+            setheading(i)
+            draw_circle(200)
+            setheading(360-i)
+            draw_circle(100)
+
+    time.sleep(5)
     clear()
 
 def main():
