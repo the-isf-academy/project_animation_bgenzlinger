@@ -1,17 +1,28 @@
 from turtle import *
+from helpers import *
+import time
 import settings
 
-def draw_animation(num_frames, sleeptime):
-    for i in range(num_frames):
-        # YOUR CODE GOES HERE#
+def draw_animation(num_frames, num_circles, sleeptime):
+    hideturtle()
 
-        screen.update()
-        time.sleep(sleeptime)
+    for i in range(num_frames):
+        # # YOUR CODE GOES HERE#
+        with no_delay():
+            clear()
+            setheading(360-i)
+            draw_1()
+            setheading(i)
+            draw_2()
+            setheading(360-i)
+            draw_3()
+
+    time.sleep(5)
     clear()
 
 def main():
     for i in range(settings.NUMREPEATS):
-        draw_animation(settings.NUMFRAMES, settings.SLEEPTIME)
+        draw_animation(settings.NUMFRAMES, settings.NUMCIRCLES, settings.SLEEPTIME)
     input("Press enter...")
 
 if __name__ == '__main__':
