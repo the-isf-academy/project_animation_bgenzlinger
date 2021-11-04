@@ -3,7 +3,7 @@ from helpers import *
 import time
 import settings
 
-def draw_animation(num_frames, num_circles, sleeptime):
+def draw_animation(num_frames, sleeptime):
     hideturtle()
 
     for i in range(num_frames):
@@ -22,7 +22,7 @@ def draw_animation(num_frames, num_circles, sleeptime):
 
 def main():
     for i in range(settings.NUMREPEATS):
-        draw_animation(settings.NUMFRAMES, settings.NUMCIRCLES, settings.SLEEPTIME)
+        draw_animation(settings.NUMFRAMES, settings.SLEEPTIME)
     input("Press enter...")
 
 if __name__ == '__main__':
