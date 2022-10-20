@@ -1,7 +1,17 @@
-SLEEPTIME = 1 #the time in between each frame
-NUMFRAMES = 50 #the number of frames in the animation
-NUMREPEATS = 2 #the number of times the animation repeats
-SCREENWIDTH = 800 #the height and width of the screen
-SCREENHEIGHT = 800 #the height and width of the screen
-FILLCOLOR = "random" #the color of the clusters. if it's set to "random" the color will be random
-OUTLINECOLOR = "DarkBlue" #the color of the outline of the clusters. if it's set to "random" the color will be random
+# sets the time in between each frame
+SLEEPTIME = 0.2
+
+# sets the number of frames in the animation
+NUMFRAMES = 50 
+
+# sets the number of times the animation repeats
+NUMREPEATS = 2
+
+# sets the height and width of the scren
+SCREENWIDTH = 800 
+SCREENHEIGHT = 800
+
+# the color of the outline of the design 
+OUTLINECOLOR = "DarkBlue"
+
+
