@@ -47,3 +47,7 @@ def draw_circle(num, length, fill, outline):
     for i in range(num):
         draw_design(length, fill, outline)
         right(360//num)
+
+
+
+
